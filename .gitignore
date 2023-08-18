@@ -1,0 +1,17 @@
+# Logs
+logs
+npm-debug.log*
+
+# Vscode
+.vscode/*
+
+# Node
+node_modules
+dist
+dist-ssr
+
+# Environment Variables
+.env
+
+# Local Netlify Folder
+.netlify

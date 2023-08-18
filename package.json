@@ -1,0 +1,15 @@
+{
+  "private": "true",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ethers": "^6.7.0",
+    "fs-extra": "^11.1.1",
+    "netlify-cli": "^16.0.3",
+    "solc": "^0.8.10"
+  },
+  "scripts": {
+    "netlify": ".\\node_modules\\.bin\\netlify dev",
+    "compile": ".\\node_modules\\.bin\\solcjs --bin --abi --include-path node_modeules/ --base-path . -o .\\outputs"
+  }
+}
