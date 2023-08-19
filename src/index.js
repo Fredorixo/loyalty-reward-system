@@ -56,12 +56,7 @@ function createDataItem(dataItems) {
                     }
 
                     const query = `method=${dataItem.method}&param=${param}&id=${id}`
-                    const res = await fetch(`/.netlify/functions/transaction?${query}`)
-
-                    if(res.status === 200) {
-                        const data = await res.json()
-                        console.log(data)
-                    }
+                    await fetch(`/.netlify/functions/transaction?${query}`)
                 }
             })
     

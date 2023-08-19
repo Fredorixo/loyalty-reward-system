@@ -3,12 +3,11 @@ export default {
         "title": "home",
         "data": [
             {
-                "image": "hexagon",
+                "image": "account_balance",
                 "name": "Supply",
                 "method": "getPoints",
                 "param": null,
                 "currency": "hexagon",
-                "value": undefined
             }
         ]
     },
@@ -16,8 +15,8 @@ export default {
         "title": "wallet",
         "data": [
             {
-                "image": "wallet",
-                "name": "Balance",
+                "image": "savings",
+                "name": "Savings",
                 "method": "balance",
                 "param": null,
                 "currency": "hexagon",
@@ -78,7 +77,7 @@ export default {
                 "value": 250
             },
             {
-                "name": "Gaming Mouse",
+                "name": "Air Pods",
                 "image": "inventory_2",
                 "currency": "hexagon",
                 "action": "Redeem",
@@ -87,13 +86,13 @@ export default {
                 "value": 150
             },
             {
-                "name": "Keyboard",
+                "name": "Jewellery",
                 "image": "inventory_2",
                 "currency": "hexagon",
                 "action": "Redeem",
                 "method": "deductPoints",
                 "param": "100",
-                "value": 100
+                "value": 500
             }
         ]
     },
@@ -105,7 +104,7 @@ export default {
         "title": "store",
         "data": [
             {
-                "name": "Dress",
+                "name": "Clothing",
                 "image": "inventory_2",
                 "currency": "currency_rupee",
                 "action": "Purchase",
@@ -114,7 +113,7 @@ export default {
                 "value": 5000
             },
             {
-                "name": "Gaming Mouse",
+                "name": "Cricket Kit",
                 "image": "inventory_2",
                 "currency": "currency_rupee",
                 "action": "Purchase",
@@ -123,7 +122,7 @@ export default {
                 "value": 1500
             },
             {
-                "name": "Jeans",
+                "name": "Footwear",
                 "image": "inventory_2",
                 "currency": "currency_rupee",
                 "action": "Purchase",

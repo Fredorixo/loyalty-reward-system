@@ -11,16 +11,14 @@ async function handler(event) {
         const wallet = new ethers.Wallet(process.env[`PRIVATE_KEY_${id}`], provider)
         const contract = new ethers.Contract(address, abi, wallet)
         const blockNumber = await provider.getBlockNumber()
-        const events = await contract.queryFilter("Exchange", Math.max(blockNumber - 9, 0))
+        const events = await contract.queryFilter("Exchange", Math.max(blockNumber - 10000, 0))
         const data = []
 
-        events.forEach(event => {
-            if(event.args[0] === wallet.address) {
-                data.push(event.args[1].toString())
+        for(let i = events.length - 1; i >= 0 && data.length < 10; --i) {
+            if(events[i].args[0] === wallet.address) {
+                data.push(events[i].args[1].toString())
             }
-        })
-
-        data.reverse()
+        }
 
         return {
             statusCode: 200,
